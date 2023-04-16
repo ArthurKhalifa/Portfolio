@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!--========== HOME DIV =============-->
+        <section class="home" id="home">
+            <!--====== HEADER =========-->
+            <nav class="header">
+                <h4 class="welcome">Bem vind<span class="red">@</span></h4>
+                <!--=====Hamburguer Menu BAR=====-->
+                <a href="##" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <!--===== HEADER LINKS =====-->
+                <div class="header-links">
+                    <ul>
+                        <li class="active"><a class="a" href="#home" id="inicio">Início</a></li>
+                        <li><a class="a" href="#about" id="sobre">Sobre</a></li>
+                        <li><a class="a" href="#project" id="projetos">Projetos</a></li>
+                        <li><a class="a" href="#contact" id="contato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!---->
+            <div class="start">
+                <div class="start-cont">
+                    <div class="arthur">
+                        <h1><span class="hover">AR</span>THUR</span></h1>
+                    </div>
+                    <p id="s" class="blue">Joaquim Santos do Nascimento</p>
+                    <div class="icon-start">
+                        <a href="https://github.com/ArthurKhalifa" target="_blank">
+                            <img id="git" src="img/icon/git.png" class="icon-img">
+                        </a>
+                        <!---->
+                        <a href="https://wa.me/5581987344685">
+                            <img id="zapp" src="img/icon/call24.png" class="icon-img">
+                        </a>
+                        <!---->
+                        <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank">
+                            <img id="lin" src="img/icon/in.png" class="icon-img">
+                        </a>
+                    </div>
+                    <p class="im">Sou um Desenvolvedor Web Front-end Junior, e estou a procura <br> do meu primeiro
+                        emprego no
+                        mundo da
+                        tecnologia.
+                    </p>
+                    <!--===== BUTTON =====-->
+                    <a href="CV .pdf" download="CV.pdf" class="baixar">
+                        <button class="btnCV">Baixar CV&nbsp&nbsp<i class="fa-solid fa-download"
+                                style="color: linear-gradient(180deg transparent, #bb3838);" id="down"></i>
+                        </button>
+                    </a>
+
+                    <!--===== SCROLL =====-->
+                    <div class="scroll-button">
+                        <a href="#about">
+                            <div class="scroll-down"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== ABOUT DIV =============-->
+        <section id="about" class="about">
+            <div class="about_personal">
+                <h1 data-aos="fade-down" class="detalhes" id="details">Detalhes<span class="blue"> pessoais</span></h1>
+            </div>
+            <!---->
+            <div class="about-content">
+                <div class="left-about" data-aos="fade-right">
+                    <img src="img/imgCont/meL.svg" id="me-img">
+                </div>
+                <!---->
+                <div class="right-about" data-aos="fade-left">
+                    <h1 class="mim">Sobre <span class="blue">mim</span></h1>
+                    <p id="desc"> &nbsp &nbsp Optei pelo mundo da tecnologia pelo fato de que eu sempre amei usar
+                        computadores, e quando
+                        descobri que poderia trabalhar usando-os, não pensei duas vezes.
+                    </p>
+                    <!---->
+                    <div class="icon-about">
+                        <div class="icon1">
+                            <img src="img/icon-about/calendarBLACK.png" id="calender">
+                            <p class="age"><span class="blue">Idade</span>: 23 anos - 09/05/1999</p>
+                        </div>
+                        <!---->
+                        <div class="icon1">
+                            <img src="img/icon-about/zapBLACK.png" id="zaap">
+                            <p class="phone"><span class="blue">Phone/Whatsapp</span>: 81 987344685</p>
+                        </div>
+                        <!---->
+                        <div class="icon1">
+                            <img src="img/icon-about/emailBLACK.png" id="eml">
+                            <p class="email"><span class="blue">Email</span>: arthursantosae@hotmail.com</p>
+                        </div>
+                        <!---->
+                        <div class="icon1">
+                            <img src="img/icon-about/locationBLACK.png" id="location">
+                            <p class="localizacao"><span class="blue">Localização</span>: Vitória de Santo Antão,
+                                Pernambuco - Brasil</p>
+                        </div>
+                        <!---->
+                        <div class="icon1">
+                            <img src="img/icon-about/mortarboardBLACK.png" class="abt-img" id="education">
+                            <p class="educacao"><span class="blue">Educação</span>: Graduação - Análise e Desenvlvimento
+                                de Sistemas
+                                (andamento)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== PROJECT DIV =============-->
+        <section id="project">
+            <h1 data-aos="fade-down" class="project_tt">Aqui estão <span class="blue">meus projetos</span></h1>
+            <!---->
+            <div class="project-container">
+                <!---->
+                <a href="https://arthurkhalifa.github.io/coursesWeb/" target="_blank">
+                    <div class="project-item" data-aos="zoom-in">
+                        <img src="img/project img/pjc1.png" class="project-img">
+                        <div class="project-data">
+                            <h3 class="project_title">Web Site</h3>
+                            <p class="project_description">Landing Page totalmente responsiva.</p>
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <div class="project-item" data-aos="zoom-in">
+                    <img src="img/project img/soon.jpg" class="project-img" id="img2">
+                    <div class="project-data">
+                        <h3 class="project_title2">Em breve...</h3>
+                        <p class="project_description2">Projeto sendo produzido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== CONTACT DIV =============-->
+        <section id="contact" class="contact">
+            <div class="main-contact">
+                <div class="left-cont" data-aos="zoom-in-right">
+                    <h1 id="contact_me">Entre em <span class="blue">contato</span>!</h1>
+                    <p id="send">Mande-me um e-mail ou mande uma mensagem em uma de minhas redes:</p>
+                    <span id="shine" class="blue">arthursantosae@hotmail.com</span>
+
+                    <!--======= CONTACT ICONS ==========-->
+                    <div class="icon-contact">
+                        <div class="a2">
+                            <a href="https://wa.me/5581987344685" target="_blank">
+                                <img src="img/icon/call32.png" class="icon-img">
+                            </a>
+                            <p>Whatsapp</p>
+                        </div>
+                        <!---->
+                        <div class="a3">
+                            <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank">
+                                <img src="img/icon/in.png" class="icon-img">
+                            </a>
+                            <p>Linkedin</p>
+                        </div>
+                        <!---->
+                        <div class="a4">
+                            <a href="https://github.com/ArthurKhalifa" target="_blank">
+                                <img src="img/icon/git.png" class="icon-img">
+                            </a>
+                            <p>Github</p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="right-cont" data-aos="zoom-in-left">
+                    <img src="img/imgCont/callL.svg" id="img-right">
+                </div>
+            </div>
+
+            <!--======= MENSAGEM ==========-->
+            <div class="msg" data-aos="zoom-in-down">
+                <div class="login-title">
+                    <h1 id="msg">Me mande uma <span class="blue">mensagem!</span></h1>
+                </div>
+                <!---->
+                <form action="https://formsubmit.co/4dae74864486491960cefb0a72d46016" method="post" class="textfield">
+                    <div class="login-flex">
+                        <input id="text" type="text" name="name" placeholder="Seu nome" class="tu" autocomplete="off"
+                            required>
+                        <input id="emaill" type="email" name="Email" placeholder="Seu e-mail" autocomplete="off"
+                            required>
+                    </div>
+                    <!---->
+                    <div class="login-comment">
+                        <textarea id="comment" name="comment" cols="70" rows="10" placeholder="Digite sua mensagem"
+                            autocomplete="off" required>
+                        </textarea>
+                    </div>
+                    <!---->
+                    <div class="btn-div">
+                        <a href="#">
+                            <button type="submit" class="btn">Enviar</button>
+                        </a>
+                    </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                </form>
+            </div>
+        </section>
+    </div>
+    <!--===== THEME COLOR DIV's =====-->
+    <div class="theme">
+        <div id="dark"
+            onclick="changeMe(); themeToggle(); changeCall(); changeWeather(); changeAbt(); changeAbt2(); changeAbt3(); changeAbt4(); changeAbt5(); changeTop()">
+            <img src="img/Weather/moon.png" id="moon">
+        </div>
+    </div>
+    <!--======= LANGUAGE ==========-->
+    <div class="langWrap">
+        <a href="##" language="portuguese" class="active"><img src="img/flags/brazil.png" id="flag"></a>
+        <div class="other">
+            <a href="##" language="english"><img src="img/flags/usa.png" id="flag"></a>
+            <a href="##" language="espanol"><img src="img/flags/spain.png" id="flag"></a>
+        </div>
+    </div>
+    <!--===== TOP BUTTON =====-->
+    <div class="top">
+        <a href="#home"><img id="top" src="img/icon/topM.png"></a>
+    </div>
+    <!--======= SHOW UP CONTENT ANIMATED ==========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500
+        });
+    </script>
+</body>
+
+</html>
