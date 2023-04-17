@@ -1,12 +1,21 @@
+/*===================== ANIMATION =====================*/
+
+const menu = document.getElementById("botao");
+
+menu.onclick = function () {
+    menu.classList.toggle("openmenu");
+}
+
 // ============================ CHANGE THEME ============================ //
 function themeToggle() {
     return document.documentElement.classList.toggle('light');
 }
 
 // ============================ TOP BUTTON  ============================ //
+
 const toTop = document.querySelector(".top")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 700) {
+    if (window.pageYOffset > 1500) {
         toTop.classList.add("active")
     } else {
         toTop.classList.remove("active")

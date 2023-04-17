@@ -69,10 +69,32 @@ html {
 }
 
 .toggle-button .bar {
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: var(--red);
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+/*===================== ANIMATION BAR =====================*/
+.openmenu #bar1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.openmenu #bar3 {
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.openmenu #bar2 {
+    width: 0;
+    transition: 0.5s;
 }
 
 .header {
