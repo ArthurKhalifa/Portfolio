@@ -5,55 +5,51 @@ function themeToggle() {
 
 // ============================ TOP BUTTON  ============================ //
 const toTop = document.querySelector(".top")
-window.addEventListener("scroll", () =>{
-    if(window.pageYOffset > 700){
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 700) {
         toTop.classList.add("active")
-    } else{
+    } else {
         toTop.classList.remove("active")
     }
 })
 
 // ============================ ACTIVE HEADER BY SCROLL ============================ //
 const actInicio = document.querySelector("#inicio")
-window.addEventListener("scroll", () =>{
-    if(window.pageYOffset >= 0 && window.pageYOffset < 700){
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 0 && window.pageYOffset < 600) {
         actInicio.classList.add("active")
-    } else{
+    } else {
         actInicio.classList.remove("active")
     }
 })
 //===========================
 const actSobre = document.querySelector("#sobre")
-window.addEventListener("scroll", () =>{
-    if(window.pageYOffset >= 700 && window.pageYOffset < 1400){
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 600 && window.pageYOffset < 1200) {
         actSobre.classList.add("active")
-    } else{
+    } else {
         actSobre.classList.remove("active")
     }
 })
 // =========================
 const actProjetos = document.querySelector("#projetos")
-window.addEventListener("scroll", () =>{
-    if(window.pageYOffset >= 1400 && window.pageYOffset < 2500){
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 1200 && window.pageYOffset < 2400) {
         actProjetos.classList.add("active")
-    } else{
+    } else {
         actProjetos.classList.remove("active")
     }
 })
 // =========================
 const actContato = document.querySelector("#contato")
-window.addEventListener("scroll", () =>{
-    if(window.pageYOffset >= 2500){
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 2400) {
         actContato.classList.add("active")
-    } else{
+    } else {
         actContato.classList.remove("active")
     }
 })
 
-
-// =========================
-
-// =========================
 // ============================ CHANGE ABOUT IMG ============================ //
 function changeMe() {
     const aboutImg = document.getElementById('me-img')
@@ -171,56 +167,8 @@ $(document).on('click', 'ul li', function () {
     $(this).addClass('active').siblings().removeClass('active')
 })
 
-/*================= TRY =================*/
-
-/*const sections = document.querySelectorAll('section[id]')
-
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageXOffset;
-    sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50;
-        const sectionId = current.getAttribute('id');
-        console.log(sectionId);
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('li a[href*="' + sectionId + '"]').classList.add("active");
-        } else {
-            document.querySelector('li a[href*="' + sectionId + '"]').classList.remove("active");
-        }
-    });  
-});
-
-// ====================== TRY 2 ========================
-/*
-let div = document.querySelectorAll('div');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () =>{
-    div.forEach(sec =>{
-        let top = window.scrollY;
-        let offset = sec.offsetTop;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height){
-            navLinks.forEach(links =>{
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-
-    });
-};
-
-*/
-
-
-
-
-
-
-
-
 // ============================ CHANGE LANGUAGE ============================ // 
+/*
 
 const langEl = document.querySelector('.langWrap');
 const link = document.querySelectorAll('a');
@@ -383,6 +331,8 @@ var data = {
         "descrEl": "About me",
     }
 }
+
+*/
 
 
 

@@ -682,8 +682,8 @@ li a.active {
 }
 
 #text,
-#emaill,
-#comment {
+#comment,
+#emaill {
     border-radius: 2px;
     border: none;
     padding: 5px 0 5px 5px;
@@ -714,8 +714,8 @@ li a.active {
 }
 
 #emaill,
-#text,
-#comment {
+#comment,
+#text {
     background-color: var(--bg-input);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -738,40 +738,6 @@ li a.active {
     transition: 0.2s;
 }
 
-/*===== LANGUAGE =====*/
-.langWrap {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 10px;
-    right: 50px;
-    z-index: 99999;
-}
-
-.langWrap:hover {
-    background-color: var(--red);
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-.langWrap:hover .other {
-    display: flex;
-    transition: 0.5s;
-}
-
-#flag {
-    box-shadow: rgba(0, 0, 0, 0.24) 10px -10px 10px;
-    border-radius: 50%;
-}
-
-#flag:hover {
-    box-shadow: white 0px 3px 8px;
-}
-
-.other {
-    display: none;
-    flex-direction: column;
-}
 
 /*============== SCROLL CUSTOM ===============*/
 ::-webkit-scrollbar {
@@ -896,12 +862,6 @@ li a.active {
         gap: 50px;
 
     }
-
-    .langWrap {
-        right: 80px;
-        top: 15px;
-    }
-
 }
 
 /*==================== MIDEA QUERY =====================*/
