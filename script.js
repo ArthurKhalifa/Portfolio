@@ -7,57 +7,10 @@ menu.onclick = function () {
 }
 
 // ============================ CHANGE THEME ============================ //
+/*
 function themeToggle() {
     return document.documentElement.classList.toggle('light');
 }
-
-// ============================ TOP BUTTON  ============================ //
-
-const toTop = document.querySelector(".top")
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 1500) {
-        toTop.classList.add("active")
-    } else {
-        toTop.classList.remove("active")
-    }
-})
-
-// ============================ ACTIVE HEADER BY SCROLL ============================ //
-const actInicio = document.querySelector("#inicio")
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 0 && window.pageYOffset < 600) {
-        actInicio.classList.add("active")
-    } else {
-        actInicio.classList.remove("active")
-    }
-})
-//===========================
-const actSobre = document.querySelector("#sobre")
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 600 && window.pageYOffset < 1200) {
-        actSobre.classList.add("active")
-    } else {
-        actSobre.classList.remove("active")
-    }
-})
-// =========================
-const actProjetos = document.querySelector("#projetos")
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 1200 && window.pageYOffset < 2400) {
-        actProjetos.classList.add("active")
-    } else {
-        actProjetos.classList.remove("active")
-    }
-})
-// =========================
-const actContato = document.querySelector("#contato")
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 2400) {
-        actContato.classList.add("active")
-    } else {
-        actContato.classList.remove("active")
-    }
-})
 
 // ============================ CHANGE ABOUT IMG ============================ //
 function changeMe() {
@@ -144,6 +97,56 @@ function changeAbt5() {
         ttab.src = "img/icon-about/mortarboardBLACK.png"
     }
 }
+
+*/
+
+// ============================ TOP BUTTON  ============================ //
+
+const toTop = document.querySelector(".top")
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 1500) {
+        toTop.classList.add("active")
+    } else {
+        toTop.classList.remove("active")
+    }
+})
+
+// ============================ ACTIVE HEADER BY SCROLL ============================ //
+const actInicio = document.querySelector("#inicio")
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 0 && window.pageYOffset < 600) {
+        actInicio.classList.add("active")
+    } else {
+        actInicio.classList.remove("active")
+    }
+})
+//===========================
+const actSobre = document.querySelector("#sobre")
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 600 && window.pageYOffset < 1200) {
+        actSobre.classList.add("active")
+    } else {
+        actSobre.classList.remove("active")
+    }
+})
+// =========================
+const actProjetos = document.querySelector("#projetos")
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 1200 && window.pageYOffset < 2400) {
+        actProjetos.classList.add("active")
+    } else {
+        actProjetos.classList.remove("active")
+    }
+})
+// =========================
+const actContato = document.querySelector("#contato")
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 2400) {
+        actContato.classList.add("active")
+    } else {
+        actContato.classList.remove("active")
+    }
+})
 
 // ============================= HAMBURGUER ACTION ============================== //
 const toggleButton = document.getElementsByClassName('toggle-button')[0];

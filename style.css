@@ -12,18 +12,18 @@ html {
 /*=====DARK THEME DEFAULT=====*/
 :root {
     --color-w: white;
-    --red: rgb(0, 197, 131);
+    --red: rgb(123, 138, 132);
     --res: #00c288;
     --redR: #30b87f;
-    --bg-dark: #212c31;
-    --color-input: #212c31;
+    --color-input: #0f0c29;
     --bg-input: #fff;
     --bg-scroll: #fff;
     --bg-border: #fff;
-    --bg-radiant: linear-gradient(180deg, transparent, rgb(0, 197, 131));
+    --bg-radiant: linear-gradient(180deg, transparent, rgb(123, 138, 132));
 }
 
 /*=====LIGHT THEME=====*/
+/*
 .light:root {
     --color-w: black;
     --red: #967f01;
@@ -35,6 +35,7 @@ html {
     --bg-border: #212c3;
     --bg-radiant: linear-gradient(180deg, transparent, #967f01);
 }
+*/
 
 /*==========*/
 
@@ -42,7 +43,10 @@ html {
     width: 100%;
     height: 100%;
     color: var(--color-w);
-    background-color: var(--bg-dark);
+    /*
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    */
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     overflow-x: hidden;
     position: relative;
 }
@@ -97,16 +101,21 @@ html {
     transition: 0.5s;
 }
 
+/*===*/
 .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--bg-dark);
+    background-color: var(--color-input);
     align-items: center;
     border-bottom: 2px solid transparent gray;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: fixed;
     z-index: 1;
+}
+
+.welcome{
+    color: var(--color-w);
 }
 
 .detalhes,
@@ -151,13 +160,6 @@ a {
     color: var(--red);
 }
 
-/*ul li.active a {
-    background-color: var(--bg-dark);
-    transition: 0.2s;
-    border: 1px solid var(--red);
-    color: var(--red);
-}
-*/
 li a.active {
     background-color: var(--bg-dark);
     transition: 0.2s;
@@ -179,8 +181,8 @@ li a.active {
 }
 
 #top {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     transition: 0.5s;
 }
 
@@ -452,20 +454,25 @@ li a.active {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 50%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 50px;
+    gap: 40px;
     padding-bottom: 100px;
 }
 
 .project-img {
     width: 100%;
-    height: 400px;
+    height: 350px;
 }
 
 #img2 {
+    width: 100%;
+    height: 350px;
+}
+
+#img3 {
     width: 100%;
     height: 350px;
 }
@@ -828,6 +835,7 @@ li a.active {
 
     .welcome {
         padding-top: 25px;
+        
     }
 
     .header-links li {

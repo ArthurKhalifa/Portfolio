@@ -16,29 +16,28 @@
 </head>
 
 <body>
+    <nav class="header">
+        <h4 class="welcome">Bem vind<span class="red">@</span></h4>
+        <!--=====Hamburguer Menu BAR=====-->
+        <a href="##" class="toggle-button" id="botao">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+        </a>
+        <!--===== HEADER LINKS =====-->
+        <div class="header-links">
+            <ul>
+                <li class="active"><a class="a" href="#home" id="inicio">Início</a></li>
+                <li><a class="a" href="#about" id="sobre">Sobre</a></li>
+                <li><a class="a" href="#project" id="projetos">Projetos</a></li>
+                <li><a class="a" href="#contact" id="contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="container" class="container">
         <!--========== HOME DIV =============-->
         <section class="home" id="home">
             <!--====== HEADER =========-->
-            <nav class="header">
-                <h4 class="welcome">Bem vind<span class="red">@</span></h4>
-                <!--=====Hamburguer Menu BAR=====-->
-                <a href="##" class="toggle-button" id="botao">
-                    <span class="bar" id="bar1"></span>
-                    <span class="bar" id="bar2"></span>
-                    <span class="bar" id="bar3"></span>
-                </a>
-                <!--===== HEADER LINKS =====-->
-                <div class="header-links">
-                    <ul>
-                        <li class="active"><a class="a" href="#home" id="inicio">Início</a></li>
-                        <li><a class="a" href="#about" id="sobre">Sobre</a></li>
-                        <li><a class="a" href="#project" id="projetos">Projetos</a></li>
-                        <li><a class="a" href="#contact" id="contato">Contato</a></li>
-                    </ul>
-                </div>
-            </nav>
-
             <!---->
             <div class="start">
                 <div class="start-cont">
@@ -51,7 +50,7 @@
                             <img id="git" src="img/icon/git.png" class="icon-img">
                         </a>
                         <!---->
-                        <a href="https://wa.me/5581987344685">
+                        <a href="https://wa.me/5581987344685" target="_blank">
                             <img id="zapp" src="img/icon/call24.png" class="icon-img">
                         </a>
                         <!---->
@@ -89,7 +88,7 @@
             <!---->
             <div class="about-content">
                 <div class="left-about" data-aos="fade-right">
-                    <img src="img/imgCont/meL.svg" id="me-img">
+                    <img src="img/imgCont/meD.svg" id="me-img">
                 </div>
                 <!---->
                 <div class="right-about" data-aos="fade-left">
@@ -101,28 +100,28 @@
                     <!---->
                     <div class="icon-about">
                         <div class="icon1">
-                            <img src="img/icon-about/calendarBLACK.png" id="calender">
+                            <img src="img/icon-about/calendarWHITE.png" id="calender">
                             <p class="age"><span class="blue">Idade</span>: 23 anos - 09/05/1999</p>
                         </div>
                         <!---->
                         <div class="icon1">
-                            <img src="img/icon-about/zapBLACK.png" id="zaap">
+                            <img src="img/icon-about/zapWHITE.png" id="zaap">
                             <p class="phone"><span class="blue">Phone/Whatsapp</span>: 81 987344685</p>
                         </div>
                         <!---->
                         <div class="icon1">
-                            <img src="img/icon-about/emailBLACK.png" id="eml">
+                            <img src="img/icon-about/emailWHITE.png" id="eml">
                             <p class="email"><span class="blue">Email</span>: arthursantosae@hotmail.com</p>
                         </div>
                         <!---->
                         <div class="icon1">
-                            <img src="img/icon-about/locationBLACK.png" id="location">
+                            <img src="img/icon-about/locationWHITE.png" id="location">
                             <p class="localizacao"><span class="blue">Localização</span>: Vitória de Santo Antão,
                                 Pernambuco - Brasil</p>
                         </div>
                         <!---->
                         <div class="icon1">
-                            <img src="img/icon-about/mortarboardBLACK.png" class="abt-img" id="education">
+                            <img src="img/icon-about/mortarboardWHITE.png" class="abt-img" id="education">
                             <p class="educacao"><span class="blue">Educação</span>: Graduação - Análise e Desenvlvimento
                                 de Sistemas
                                 (andamento)</p>
@@ -132,7 +131,6 @@
                 </div>
             </div>
         </section>
-
         <!--========== PROJECT DIV =============-->
         <section id="project">
             <h1 data-aos="fade-down" class="project_tt">Aqui estão <span class="blue">meus projetos</span></h1>
@@ -149,8 +147,18 @@
                     </div>
                 </a>
                 <!---->
+                <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target="_blank">
+                    <div class="project-item" data-aos="zoom-in">
+                        <img src="img/project img/tbHBO.png" class="project-img" id="img2">
+                        <div class="project-data">
+                            <h3 class="project_title">Catalogo de Filmes</h3>
+                            <p class="project_description">Recriação do Site HBO MAX Movies.</p>
+                        </div>
+                    </div>
+                </a>
+                <!---->
                 <div class="project-item" data-aos="zoom-in">
-                    <img src="img/project img/soon.jpg" class="project-img" id="img2">
+                    <img src="img/project img/soon.jpg" class="project-img" id="img3">
                     <div class="project-data">
                         <h3 class="project_title2">Em breve...</h3>
                         <p class="project_description2">Projeto sendo produzido.</p>
@@ -193,7 +201,7 @@
                 </div>
                 <!---->
                 <div class="right-cont" data-aos="zoom-in-left">
-                    <img src="img/imgCont/callL.svg" id="img-right">
+                    <img src="img/imgCont/callD.svg" id="img-right">
                 </div>
             </div>
 
@@ -207,8 +215,7 @@
                     <div class="login-flex">
                         <input id="text" type="text" name="name" placeholder="Seu nome" class="tu" autocomplete="off"
                             required>
-                        <input id="emaill" type="email" placeholder="Seu e-mail" autocomplete="off"
-                            required>
+                        <input id="emaill" type="email" placeholder="Seu e-mail" autocomplete="off" required>
                     </div>
                     <!---->
                     <div class="login-comment">
@@ -228,12 +235,15 @@
         </section>
     </div>
     <!--===== THEME COLOR DIV's =====-->
+    <!-- 
     <div class="theme">
         <div id="dark"
             onclick="changeMe(); themeToggle(); changeCall(); changeWeather(); changeAbt(); changeAbt2(); changeAbt3(); changeAbt4(); changeAbt5(); changeTop()">
             <img src="img/Weather/moon.png" id="moon">
         </div>
     </div>
+    -->
+
     <!--===== TOP BUTTON =====-->
     <div class="top">
         <a href="#home"><img id="top" src="img/icon/topM.png"></a>
