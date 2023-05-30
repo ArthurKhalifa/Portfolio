@@ -167,7 +167,6 @@ function animeScroll() {
             element.classList.add(animationClass);
         }
     });
-    console(animeScroll())
 }
 
 window.addEventListener('scroll', function () {

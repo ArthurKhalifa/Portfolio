@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 /*=====DARK THEME DEFAULT=====*/
@@ -43,10 +49,6 @@ html {
     width: 100%;
     height: 100%;
     color: var(--color-w);
-    /*
-    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
-    */
-    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     overflow-x: hidden;
     position: relative;
 }
@@ -114,7 +116,7 @@ html {
     z-index: 1;
 }
 
-.welcome{
+.welcome {
     color: var(--color-w);
 }
 
@@ -276,6 +278,7 @@ li a.active {
     align-items: center;
     justify-content: center;
     font-size: 60px;
+    
     border-radius: 15px;
     margin: 0 250px;
     padding: 0 30px;
@@ -288,10 +291,14 @@ li a.active {
     color: var(--bg-border);
     transition: 0.5s;
 }
+.arthur h1{
+    font-weight: 900;
+}
 
 .hover {
     color: var(--red);
     transition: 0.5s;
+    
 }
 
 #s {
@@ -785,6 +792,33 @@ li a.active {
     transition: 0.5s;
 }
 
+/*======= FLAG =======*/
+#flagEn{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 9999;
+    transition: 0.5 ease-in-out;
+}
+
+#flagPt{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 9999;
+    transition: 0.5 ease-in-out;
+}
+
+#flagEn:hover{
+    top: 18px;
+    transition: 0.5 ease-in-out;
+}
+
+#flagPt:hover{
+    top: 18px;
+    transition: 0.5 ease-in-out;
+}
+
 /*==================== MIDEA QUERY =====================*/
 
 @media screen and (max-width: 770px) {
@@ -829,13 +863,13 @@ li a.active {
         padding: 0;
         margin-top: 20px;
         padding-bottom: 5px;
-        background-color: var(--bg-dark);
+        background-color: var(--color-input);
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        z-index: 9;
     }
 
     .welcome {
         padding-top: 25px;
-        
     }
 
     .header-links li {
@@ -843,7 +877,9 @@ li a.active {
         width: 100%;
         margin: 0;
         margin-bottom: 8px;
+        background-color: var(--color-input);
         margin-top: 10px;
+        z-index: 99;
     }
 
     .header-links.active {
@@ -891,6 +927,16 @@ li a.active {
         text-align: center;
         gap: 50px;
 
+    }
+
+    #flagPt{
+        top: 25px;
+        right: 100px;
+    }
+
+    #flagEn{
+        top: 25px;
+        right: 100px;
     }
 }
 
