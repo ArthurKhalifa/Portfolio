@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
@@ -278,7 +278,7 @@ li a.active {
     align-items: center;
     justify-content: center;
     font-size: 60px;
-    
+
     border-radius: 15px;
     margin: 0 250px;
     padding: 0 30px;
@@ -291,14 +291,15 @@ li a.active {
     color: var(--bg-border);
     transition: 0.5s;
 }
-.arthur h1{
+
+.arthur h1 {
     font-weight: 900;
 }
 
 .hover {
     color: var(--red);
     transition: 0.5s;
-    
+
 }
 
 #s {
@@ -793,7 +794,7 @@ li a.active {
 }
 
 /*======= FLAG =======*/
-#flagEn{
+#flagEn {
     position: fixed;
     top: 20px;
     right: 10px;
@@ -801,7 +802,7 @@ li a.active {
     transition: 0.5 ease-in-out;
 }
 
-#flagPt{
+#flagPt {
     position: fixed;
     top: 20px;
     right: 10px;
@@ -809,12 +810,12 @@ li a.active {
     transition: 0.5 ease-in-out;
 }
 
-#flagEn:hover{
+#flagEn:hover {
     top: 18px;
     transition: 0.5 ease-in-out;
 }
 
-#flagPt:hover{
+#flagPt:hover {
     top: 18px;
     transition: 0.5 ease-in-out;
 }
@@ -929,12 +930,12 @@ li a.active {
 
     }
 
-    #flagPt{
+    #flagPt {
         top: 25px;
         right: 100px;
     }
 
-    #flagEn{
+    #flagEn {
         top: 25px;
         right: 100px;
     }
