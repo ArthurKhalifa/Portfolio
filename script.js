@@ -114,7 +114,7 @@ window.addEventListener("scroll", () => {
 // ============================ ACTIVE HEADER BY SCROLL ============================ //
 const actInicio = document.querySelector("#inicio")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 0 && window.pageYOffset < 600) {
+    if (window.pageYOffset >= 0 && window.pageYOffset < 700) {
         actInicio.classList.add("active")
     } else {
         actInicio.classList.remove("active")
@@ -123,7 +123,7 @@ window.addEventListener("scroll", () => {
 //===========================
 const actSobre = document.querySelector("#sobre")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 600 && window.pageYOffset < 1200) {
+    if (window.pageYOffset >= 700 && window.pageYOffset < 1600) {
         actSobre.classList.add("active")
     } else {
         actSobre.classList.remove("active")
@@ -132,7 +132,7 @@ window.addEventListener("scroll", () => {
 // =========================
 const actProjetos = document.querySelector("#projetos")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 1200 && window.pageYOffset < 2400) {
+    if (window.pageYOffset >= 1600 && window.pageYOffset < 3800) {
         actProjetos.classList.add("active")
     } else {
         actProjetos.classList.remove("active")
@@ -141,7 +141,7 @@ window.addEventListener("scroll", () => {
 // =========================
 const actContato = document.querySelector("#contato")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 2400) {
+    if (window.pageYOffset >= 3800) {
         actContato.classList.add("active")
     } else {
         actContato.classList.remove("active")
@@ -342,7 +342,6 @@ var data = {
         "descrEl": "About me",
     }
 }
-
 */
 
 
