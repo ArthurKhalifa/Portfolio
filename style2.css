@@ -13,13 +13,13 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background-color: black;
     color: white;
     gap: 10px;
 }
 
 .span {
-    color: rgb(123, 138, 132);
+    color: #c56c07;
 }
 
 a {
@@ -43,5 +43,5 @@ a {
 .btn:hover {
     padding: 3px 15px;
     transition: 0.5;
-    border: 2px solid #32BEA6;
+    border: 2px solid #c56c07;
 }

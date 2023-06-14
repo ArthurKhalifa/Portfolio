@@ -1,3 +1,15 @@
+// ====== CHANGING BG COLOR BY SCROLL ===== // 
+// const navEL = document.querySelector('.header')[0];
+// const bgBlack = document.getElementsByClassName('header')[0];
+
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY >= 65) {
+//     bgBlack.style.backgroundColor = "red"
+//   } else {
+//     bgBlack.style.backgroundColor = "transparent"
+//   }
+// });
+
 /*===================== ANIMATION =====================*/
 
 const menu = document.getElementById("botao");
@@ -7,38 +19,38 @@ menu.onclick = function () {
 }
 
 // ============================ CHANGE THEME ============================ //
-/*
+
 function themeToggle() {
     return document.documentElement.classList.toggle('light');
 }
 
 // ============================ CHANGE ABOUT IMG ============================ //
-function changeMe() {
-    const aboutImg = document.getElementById('me-img')
-    if (aboutImg.src.match('img/imgCont/meL.svg')) {
-        aboutImg.src = 'img/imgCont/meD.svg'
+function changeGH() {
+    const aboutImg = document.getElementById('reed2')
+    if (aboutImg.src.match('img/icon/gW.png')) {
+        aboutImg.src = 'img/icon/gB.png'
     } else {
-        aboutImg.src = 'img/imgCont/meL.svg'
+        aboutImg.src = 'img/icon/gW.png'
     }
 }
 
 // ============================ CHANGE CONTACT IMG ============================ //
-function changeCall() {
-    const callImg = document.getElementById('img-right')
-    if (callImg.src.match('img/imgCont/callL.svg')) {
-        callImg.src = 'img/imgCont/callD.svg'
+function changeRed() {
+    const callImg = document.getElementById('reed1')
+    if (callImg.src.match('img/icon/nxW.png')) {
+        callImg.src = 'img/icon/nxB.png'
     } else {
-        callImg.src = 'img/imgCont/callL.svg'
+        callImg.src = 'img/icon/nxW.png'
     }
 }
 
 // ============================ CHANGE TOP ICON ============================ //
 function changeTop() {
     const weather = document.getElementById('top')
-    if (weather.src.match('img/icon/topM.png')) {
-        weather.src = 'img/icon/topG.png'
+    if (weather.src.match('img/icon/topW.png')) {
+        weather.src = 'img/icon/TopB.png'
     } else {
-        weather.src = 'img/icon/topM.png'
+        weather.src = 'img/icon/topW.png'
     }
 }
 
@@ -98,13 +110,11 @@ function changeAbt5() {
     }
 }
 
-*/
-
 // ============================ TOP BUTTON  ============================ //
 
 const toTop = document.querySelector(".top")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 1500) {
+    if (window.pageYOffset > 1800) {
         toTop.classList.add("active")
     } else {
         toTop.classList.remove("active")
@@ -114,7 +124,7 @@ window.addEventListener("scroll", () => {
 // ============================ ACTIVE HEADER BY SCROLL ============================ //
 const actInicio = document.querySelector("#inicio")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 0 && window.pageYOffset < 700) {
+    if (window.pageYOffset >= 0 && window.pageYOffset < 800) {
         actInicio.classList.add("active")
     } else {
         actInicio.classList.remove("active")
@@ -123,7 +133,7 @@ window.addEventListener("scroll", () => {
 //===========================
 const actSobre = document.querySelector("#sobre")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 700 && window.pageYOffset < 1600) {
+    if (window.pageYOffset >= 800 && window.pageYOffset < 1700) {
         actSobre.classList.add("active")
     } else {
         actSobre.classList.remove("active")
@@ -132,7 +142,7 @@ window.addEventListener("scroll", () => {
 // =========================
 const actProjetos = document.querySelector("#projetos")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 1600 && window.pageYOffset < 3800) {
+    if (window.pageYOffset >= 1700 && window.pageYOffset < 2600) {
         actProjetos.classList.add("active")
     } else {
         actProjetos.classList.remove("active")
@@ -141,12 +151,20 @@ window.addEventListener("scroll", () => {
 // =========================
 const actContato = document.querySelector("#contato")
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 3800) {
+    if (window.pageYOffset >= 2600) {
         actContato.classList.add("active")
     } else {
         actContato.classList.remove("active")
     }
 })
+// =========== KKKKKKKKKKK =============== //
+const botam = document.getElementsByClassName('btn')[0];
+const inv = document.getElementsByClassName('inv')[0];
+
+botam.addEventListener('click', () => {
+    inv.classList.toggle('showup')
+})
+
 
 // ============================= HAMBURGUER ACTION ============================== //
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -178,7 +196,18 @@ $(document).on('click', 'ul li', function () {
     $(this).addClass('active').siblings().removeClass('active')
 })
 
-// ============================ CHANGE LANGUAGE ============================ // 
+//======= Swipers =======
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+// ============================ CHANGE LANGUAGE ============================ //
 /*
 
 const langEl = document.querySelector('.langWrap');

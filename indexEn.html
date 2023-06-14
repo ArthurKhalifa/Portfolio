@@ -8,12 +8,13 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="img/icon/a.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio • Arthur</title>
 </head>
 
 <body>
@@ -34,6 +35,13 @@
                 <li><a class="a" href="#contact" id="contato">Contact</a></li>
             </ul>
         </div>
+        <!--===== THEME COLOR DIV's =====-->
+        <div class="theme">
+            <div id="dark"
+                onclick="themeToggle(); changeRed(); changeGH(); changeWeather(); changeAbt(); changeAbt2(); changeAbt3(); changeAbt4(); changeAbt5(); changeTop()">
+                <img src="img/Weather/moon.png" id="moon">
+            </div>
+        </div>
     </nav>
     <div id="container" class="container">
         <!--========== HOME DIV =============-->
@@ -47,15 +55,15 @@
                     </div>
                     <p id="s" class="blue">Joaquim Santos do Nascimento</p>
                     <div class="icon-start">
-                        <a href="https://github.com/ArthurKhalifa" target="_blank">
+                        <a href="https://github.com/ArthurKhalifa" target="_blank" title="Github">
                             <img id="git" src="img/icon/git.png" class="icon-img">
                         </a>
                         <!---->
-                        <a href="https://wa.me/5581987344685" target="_blank">
+                        <a href="https://wa.me/5581987344685" target="_blank" title="Whatsapp">
                             <img id="zapp" src="img/icon/call24.png" class="icon-img">
                         </a>
                         <!---->
-                        <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank">
+                        <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank" title="Linkedin">
                             <img id="lin" src="img/icon/in.png" class="icon-img">
                         </a>
                     </div>
@@ -65,8 +73,7 @@
                     <!--===== BUTTON =====-->
 
                     <a href="EnCV/CVen.pdf" target="_blank">
-                        <button class="btnCV">Curriculum&nbsp&nbsp<i class="fa-solid fa-arrow-up-right-from-square"
-                                style="color: #ffffff;"></i>
+                        <button class="btnCV">Curriculum&nbsp&nbsp<i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </button>
                     </a>
 
@@ -88,7 +95,7 @@
             <!---->
             <div class="about-content">
                 <div class="left-about" data-aos="fade-right">
-                    <img src="img/imgCont/meP.svg" id="me-img">
+                    <img src="img/imgCont/me.svg" id="me-img">
                 </div>
                 <!---->
                 <div class="right-about" data-aos="fade-left">
@@ -150,106 +157,103 @@
             <!---->
             <div class="project-container">
                 <!---->
-                <div class="p1">
-                    <div class="down">
-                        <a href="https://arthurkhalifa.github.io/coursesWeb/" target="_blank">
-                            <div class="project-item" data-aos="zoom-in">
-                                <img src="img/project img/pjc1.png" class="project-img">
-                                <div class="project-data">
-                                    <h3 class="project_title">Landing Page</h3>
-                                    <p class="project_description">Landing Page fully responsive.</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--== LANDING PAGE ==-->
+                        <div class="p2 swiper-slide">
+                            <div class="web_desc web_desc2" data-aos="fade-left">
+                                <h1>Landing Page</h1>
+                                <p>This project is very special to me because it was the first one I built. HUH
+                                    he had
+                                    several project options and this one was the hardest, guess which one I chose?
+                                </p>
+                                <div class="tools tools2">
+                                    <h4 class="realse realseJ">Javascript</h4>
+                                    <h4 class="realse realseH">HTML</h4>
+                                    <h4 class="realse realseC">CSS</h4>
+                                </div>
+                                <div class="reeed">
+                                    <a href="https://arthurkhalifa.github.io/coursesWeb/" target="_blank"
+                                        class="red1"><img src="img/icon/nxW.png" id="reed1"></a>
+                                    <a href="https://github.com/ArthurKhalifa/coursesWeb" target="_blank"
+                                        class="red2"><img src="img/icon/gW.png" id="reed2"></a>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="web_desc" data-aos="fade-left">
-                        <h1>Landing Page</h1>
-                        <p>This project is very special to me because it was the first one I built. <br>I had several
-                            project options and this one was the hardest, guess which one I chose?
-                        </p>
-
-                        <div class="tools">
-                            <h4 class="realse realseJ">Javascript</h4>
-                            <h4 class="realse realseH">HTML</h4>
-                            <h4 class="realse realseC">CSS</h4>
-
+                            <a href="https://arthurkhalifa.github.io/coursesWeb/" target="_blank">
+                                <div class="project-item" data-aos="zoom-in">
+                                    <img src="img/project img/pjc1.png" class="project-img">
+                                    <div class="project-data">
+                                        <h3 class="project_title">Landing Page</h3>
+                                        <p class="project_description">Landing Page fully responsive.</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="red">
-                            <a href="https://arthurkhalifa.github.io/coursesWeb/" target="_blank" class="red1"><img
-                                    src="img/icon/Red.png" id="reed"></a>
-                            <a href="https://github.com/ArthurKhalifa/coursesWeb" target="_blank" class="red2"><img
-                                    src="img/icon/github.png" id="reed"></a>
-                        </div>
-                    </div>
-                    <div class="up">
-                        <a href="https://arthurkhalifa.github.io/coursesWeb/" target="_blank">
-                            <div class="project-item" data-aos="zoom-in">
-                                <img src="img/project img/pjc1.png" class="project-img">
-                                <div class="project-data">
-                                    <h3 class="project_title">Landing Page</h3>
-                                    <p class="project_description">Landing Page fully responsive.</p>
+                        <!--== HBO MAX ==-->
+                        <div class="p2 swiper-slide">
+                            <div class="web_desc web_desc2" data-aos="fade-right">
+                                <h1>HBO MAX FILMES!</h1>
+                                <p>Consuming libraries, I built a copy of the site I like,<br> HBO MAX. took some
+                                    days, but I learned a lot (it was quite a challenge!)
+                                </p>
+                                <div class="tools tools2">
+                                    <h4 class="realse realseJ">Javascript</h4>
+                                    <h4 class="realse realseH">HTML</h4>
+                                    <h4 class="realse realseC">CSS</h4>
+                                </div>
+                                <div class="reeed">
+                                    <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" class="red1"
+                                        target="_blank"><img src="img/icon/nxW.png" id="reed1"></a>
+                                    <a href="https://github.com/ArthurKhalifa/Catalogo-De-Filmes" class="red2"
+                                        target="_blank"><img src="img/icon/gW.png" id="reed2"></a>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!--==========-->
-                <div class="p1 p2">
-                    <div class="web_desc web_desc2" data-aos="fade-right">
-                        <h1>HBO MAX FILMES!</h1>
-                        <p>Consuming libraries, I built a copy of the site I like, HBO MAX. It took a few days.. But I
-                            learned a lot!
-                        </p>
-                        <div class="tools tools2">
-                            <h4 class="realse realseJ">Javascript</h4>
-                            <h4 class="realse realseH">HTML</h4>
-                            <h4 class="realse realseC">CSS</h4>
+                            <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target="_blank">
+                                <div class="project-item" data-aos="zoom-in">
+                                    <img src="img/project img/tbHBO.png" class="project-img" id="img2">
+                                    <div class="project-data">
+                                        <h3 class="project_title">HBO MAX Filmes</h3>
+                                        <p class="project_description">Recreation of the HBO MAX Filmes Website.</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="red">
-                            <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" class="red1"
-                                target="_blank"><img src="img/icon/Red.png" id="reed"></a>
-                            <a href="https://github.com/ArthurKhalifa/Catalogo-De-Filmes" class="red2"
-                                target="_blank"><img src="img/icon/github.png" id="reed"></a>
-                        </div>
-                    </div>
-                    <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target="_blank">
-                        <div class="project-item" data-aos="zoom-in">
-                            <img src="img/project img/tbHBO.png" class="project-img" id="img2">
-                            <div class="project-data">
-                                <h3 class="project_title">HBO MAX Filmes</h3>
-                                <p class="project_description">Recreation of the HBO MAX Filmes Website.</p>
+                        <!--== FEEDBACK ==-->
+                        <div class="p2 swiper-slide">
+                            <div class="web_desc web_desc2" data-aos="fade-left">
+                                <h1>FeedBack Service</h1>
+                                <p>Simple but I learned a lot to work with components, hook's and other
+                                    functionalities
+                                    basics of ReactJS
+                                </p>
+                                <div class="tools tools2">
+                                    <h4 class="realse realseR">ReactJS</h4>
+                                    <h4 class="realse realseH">HTML</h4>
+                                    <h4 class="realse realseC">CSS</h4>
+                                </div>
+                                <div class="reeed">
+                                    <a href="https://feed-back-nu.vercel.app/" target="_blank" class="red1"><img
+                                            src="img/icon/nxW.png" id="reed1"></a>
+                                    <a href="https://github.com/ArthurKhalifa/FeedBack" target="_blank"
+                                        class="red2"><img src="img/icon/gW.png" id="reed2"></a>
+                                </div>
                             </div>
+                            <a href="https://feed-back-nu.vercel.app/" target="_blank">
+                                <div class="project-item" data-aos="zoom-in">
+                                    <img src="img/project img/fb.png" class="project-img">
+                                    <div class="project-data">
+                                        <h3 class="project_title2">FEEDBACK</h3>
+                                        <p class="project_description2">Information Collection</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+                    <div class="swiper-button-next" id="arrow"></div>
+                    <div class="swiper-button-prev" id="arrow"></div>
                 </div>
-                <!--==========-->
-                <div class="p1 p3">
-                    <div class="down desl">
-                        <div class="project-item" data-aos="zoom-in">
-                            <img src="img/project img/exe.png" class="project-img">
-                            <div class="project-data">
-                                <h3 class="project_title2">FEEDBACK</h3>
-                                <p class="project_description2">Information collection</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web_desc " data-aos="fade-left">
-                        <h1>Feedback Service</h1>
-                        <p>Simple but I learned a lot to work with components, hooks and <br>other basic features of ReactJS
-                        </p>
-                        <div class="tools">
-                            <h4 class="realse realseR">ReactJS</h4>
-                            <h4 class="realse realseH">HTML</h4>
-                            <h4 class="realse realseC">CSS</h4>
-                        </div>
-                        <div class="red">
-                            <a href="https://feed-back-nu.vercel.app/" target="_blank" class="red1"><img src="img/icon/Red.png"
-                                    id="reed"></a>
-                            <a href="https://github.com/ArthurKhalifa/FeedBack" target="_blank"
-                                class="red2"><img src="img/icon/github.png" id="reed"></a>
-                        </div>
-                    </div>
+                <div class="seeMore">
+                    <button class="seeMais">See More</button>
                 </div>
             </div>
         </section>
@@ -288,7 +292,7 @@
                 </div>
                 <!---->
                 <div class="right-cont" data-aos="zoom-in-left">
-                    <img src="img/imgCont/callP.svg" id="img-right">
+                    <img src="img/imgCont/call.svg" id="img-right">
                 </div>
             </div>
 
@@ -323,15 +327,6 @@
     </div>
     <!--===== FLAG LANGUAGE =====-->
     <a href="https://arthurkhalifa.github.io/Portfolio"><img src="img/flags/brazil.png" id="flagEn"></a>
-    <!--===== THEME COLOR DIV's =====-->
-    <!-- 
-        <div class="theme">
-            <div id="dark"
-                onclick="changeMe(); themeToggle(); changeCall(); changeWeather(); changeAbt(); changeAbt2(); changeAbt3(); changeAbt4(); changeAbt5(); changeTop()">
-                <img src="img/Weather/moon.png" id="moon">
-            </div>
-        </div>
-        -->
     <!--===== TOP BUTTON =====-->
     <div class="top">
         <a href="#home"><img id="top" src="img/icon/topW.png"></a>
@@ -339,6 +334,7 @@
     <!--===== JAVASCRIPT =====-->
     <script src="script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--== SHOW UP CONTENT ANIMATED ==-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
