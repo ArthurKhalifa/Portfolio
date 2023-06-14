@@ -157,14 +157,6 @@ window.addEventListener("scroll", () => {
         actContato.classList.remove("active")
     }
 })
-// =========== KKKKKKKKKKK =============== //
-const botam = document.getElementsByClassName('btn')[0];
-const inv = document.getElementsByClassName('inv')[0];
-
-botam.addEventListener('click', () => {
-    inv.classList.toggle('showup')
-})
-
 
 // ============================= HAMBURGUER ACTION ============================== //
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
