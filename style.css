@@ -359,9 +359,9 @@ li a.active {
 }
 
 .btnCV:hover {
-    background-color: var(--bg-dark);
+    background-color: var(--res);
     color: var(--red);
-    transition: 0.2s;
+
 }
 
 .cv-button {
@@ -609,7 +609,6 @@ li a.active {
     transition: all 0.5s ease-in-out;
 }
 
-
 #reed1 {
     width: 32px;
 }
@@ -628,6 +627,43 @@ li a.active {
     transition: all 0.2s ease-in-out;
 }
 
+#reed3 {
+    width: 32px;
+}
+
+#reed3:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+#reed4 {
+    width: 32px;
+}
+
+#reed4:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+#reed5 {
+    width: 32px;
+}
+
+#reed5:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+#reed6 {
+    width: 32px;
+}
+
+#reed6:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/*=========*/
 .red {
     margin-top: 10px;
     margin-left: 0;
@@ -954,13 +990,13 @@ li a.active {
     color: var(--red);
 }
 
-.inv{
+.inv {
     color: green;
     text-align: center;
     display: none;
 }
 
-.showup{
+.showup {
     display: block;
 }
 

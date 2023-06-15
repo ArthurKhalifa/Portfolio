@@ -24,7 +24,7 @@ function themeToggle() {
     return document.documentElement.classList.toggle('light');
 }
 
-// ============================ CHANGE ABOUT IMG ============================ //
+// ============================ CHANGE GITHUB IMG ============================ //
 function changeGH() {
     const aboutImg = document.getElementById('reed2')
     if (aboutImg.src.match('img/icon/gW.png')) {
@@ -34,7 +34,26 @@ function changeGH() {
     }
 }
 
-// ============================ CHANGE CONTACT IMG ============================ //
+//==================
+function changeGH2() {
+    const aboutImg = document.getElementById('reed4')
+    if (aboutImg.src.match('img/icon/gW.png')) {
+        aboutImg.src = 'img/icon/gB.png'
+    } else {
+        aboutImg.src = 'img/icon/gW.png'
+    }
+}
+
+//==================
+function changeGH3() {
+    const aboutImg = document.getElementById('reed6')
+    if (aboutImg.src.match('img/icon/gW.png')) {
+        aboutImg.src = 'img/icon/gB.png'
+    } else {
+        aboutImg.src = 'img/icon/gW.png'
+    }
+}
+// ============================ CHANGE REDIRECT IMG ============================ //
 function changeRed() {
     const callImg = document.getElementById('reed1')
     if (callImg.src.match('img/icon/nxW.png')) {
@@ -43,16 +62,36 @@ function changeRed() {
         callImg.src = 'img/icon/nxW.png'
     }
 }
-
-// ============================ CHANGE TOP ICON ============================ //
-function changeTop() {
-    const weather = document.getElementById('top')
-    if (weather.src.match('img/icon/topW.png')) {
-        weather.src = 'img/icon/TopB.png'
+ 
+// =================
+function changeRed2() {
+    const callImg = document.getElementById('reed3')
+    if (callImg.src.match('img/icon/nxW.png')) {
+        callImg.src = 'img/icon/nxB.png'
     } else {
-        weather.src = 'img/icon/topW.png'
+        callImg.src = 'img/icon/nxW.png'
     }
 }
+
+// =================
+function changeRed3() {
+    const callImg = document.getElementById('reed5')
+    if (callImg.src.match('img/icon/nxW.png')) {
+        callImg.src = 'img/icon/nxB.png'
+    } else {
+        callImg.src = 'img/icon/nxW.png'
+    }
+}
+ 
+// ============================ CHANGE TOP ICON ============================ //
+// function changeTop() {
+//     const weather = document.getElementById('top')
+//     if (weather.src.match('img/icon/topW.png')) {
+//         weather.src = 'img/icon/TopB.png'
+//     } else {
+//         weather.src = 'img/icon/topW.png'
+//     }
+// }
 
 // ============================ CHANGE ICON WEATHER ============================ //
 function changeWeather() {
