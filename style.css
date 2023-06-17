@@ -663,6 +663,24 @@ li a.active {
     transition: all 0.2s ease-in-out;
 }
 
+#reed7 {
+    width: 32px;
+}
+
+#reed7:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+#reed8 {
+    width: 32px;
+}
+
+#reed8:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
 /*=========*/
 .red {
     margin-top: 10px;

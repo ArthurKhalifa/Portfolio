@@ -53,6 +53,16 @@ function changeGH3() {
         aboutImg.src = 'img/icon/gW.png'
     }
 }
+
+//==================
+function changeGH4() {
+    const aboutImg = document.getElementById('reed8')
+    if (aboutImg.src.match('img/icon/gW.png')) {
+        aboutImg.src = 'img/icon/gB.png'
+    } else {
+        aboutImg.src = 'img/icon/gW.png'
+    }
+}
 // ============================ CHANGE REDIRECT IMG ============================ //
 function changeRed() {
     const callImg = document.getElementById('reed1')
@@ -62,7 +72,7 @@ function changeRed() {
         callImg.src = 'img/icon/nxW.png'
     }
 }
- 
+
 // =================
 function changeRed2() {
     const callImg = document.getElementById('reed3')
@@ -82,7 +92,17 @@ function changeRed3() {
         callImg.src = 'img/icon/nxW.png'
     }
 }
- 
+
+// =================
+function changeRed4() {
+    const callImg = document.getElementById('reed7')
+    if (callImg.src.match('img/icon/nxW.png')) {
+        callImg.src = 'img/icon/nxB.png'
+    } else {
+        callImg.src = 'img/icon/nxW.png'
+    }
+}
+
 // ============================ CHANGE TOP ICON ============================ //
 // function changeTop() {
 //     const weather = document.getElementById('top')
