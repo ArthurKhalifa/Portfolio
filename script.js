@@ -63,6 +63,15 @@ function changeGH4() {
         aboutImg.src = 'img/icon/gW.png'
     }
 }
+
+function changeGH5() {
+    const aboutImg = document.getElementById('reed10')
+    if (aboutImg.src.match('img/icon/gW.png')) {
+        aboutImg.src = 'img/icon/gB.png'
+    } else {
+        aboutImg.src = 'img/icon/gW.png'
+    }
+}
 // ============================ CHANGE REDIRECT IMG ============================ //
 function changeRed() {
     const callImg = document.getElementById('reed1')
@@ -96,6 +105,16 @@ function changeRed3() {
 // =================
 function changeRed4() {
     const callImg = document.getElementById('reed7')
+    if (callImg.src.match('img/icon/nxW.png')) {
+        callImg.src = 'img/icon/nxB.png'
+    } else {
+        callImg.src = 'img/icon/nxW.png'
+    }
+}
+
+// =================
+function changeRed5() {
+    const callImg = document.getElementById('reed9')
     if (callImg.src.match('img/icon/nxW.png')) {
         callImg.src = 'img/icon/nxB.png'
     } else {
