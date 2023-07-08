@@ -24,6 +24,26 @@ function themeToggle() {
     return document.documentElement.classList.toggle('light');
 }
 
+// ============================ CHANGE REDIRECT IMG ============================ //
+function changeCall0() {
+    const callmeImg = document.getElementById('img_right')
+    if (callmeImg.src.match('img/imgCont/callR.svg')) {
+        callmeImg.src = 'img/imgCont/call.svg'
+    } else {
+        callmeImg.src = 'img/imgCont/callR.svg'
+    }
+}
+//=========
+
+
+function changeCall() {
+    const meImg = document.getElementById('me-img')
+    if (meImg.src.match('img/imgCont/meR.svg')) {
+        meImg.src = 'img/imgCont/me.svg'
+    } else {
+        meImg.src = 'img/imgCont/meR.svg'
+    }
+}
 // ============================ CHANGE GITHUB IMG ============================ //
 function changeGH() {
     const aboutImg = document.getElementById('reed2')
@@ -122,15 +142,21 @@ function changeRed5() {
     }
 }
 
-// ============================ CHANGE TOP ICON ============================ //
-// function changeTop() {
-//     const weather = document.getElementById('top')
-//     if (weather.src.match('img/icon/topW.png')) {
-//         weather.src = 'img/icon/TopB.png'
-//     } else {
-//         weather.src = 'img/icon/topW.png'
-//     }
+// ============================ PORT2 See More ============================ //
+// const seeMais = document.getElementsByClassName('seeMais')[0];
+
+// function more() {
+//     seeMais.classList.add('ativado')
 // }
+// ============================ CHANGE TOP ICON ============================ //
+function changeTop() {
+    const weather = document.getElementsByClassName('top')
+    if (weather.src.match('img/icon/tp.png')) {
+        weather.src = 'img/icon/TopB.png'
+    } else {
+        weather.src = 'img/icon/tp.png'
+    }
+}
 
 // ============================ CHANGE ICON WEATHER ============================ //
 function changeWeather() {
@@ -143,50 +169,50 @@ function changeWeather() {
 }
 
 // ============================ CHANGE ICON ABOUT ============================ //
-function changeAbt() {
-    const abt = document.getElementById('eml')
-    if (abt.src.match("img/icon-about/emailBLACK.png")) {
-        abt.src = "img/icon-about/emailWHITE.png"
-    } else {
-        abt.src = "img/icon-about/emailBLACK.png"
-    }
-}
+// function changeAbt() {
+//     const abt = document.getElementById('eml')
+//     if (abt.src.match("img/icon-about/emailBLACK.png")) {
+//         abt.src = "img/icon-about/emailWHITE.png"
+//     } else {
+//         abt.src = "img/icon-about/emailBLACK.png"
+//     }
+// }
 // ==================================
-function changeAbt2() {
-    const tba = document.getElementById('calender')
-    if (tba.src.match("img/icon-about/calendarBLACK.png")) {
-        tba.src = "img/icon-about/calendarWHITE.png"
-    } else {
-        tba.src = "img/icon-about/calendarBLACK.png"
-    }
-}
+// function changeAbt2() {
+//     const tba = document.getElementById('calender')
+//     if (tba.src.match("img/icon-about/calendarBLACK.png")) {
+//         tba.src = "img/icon-about/calendarWHITE.png"
+//     } else {
+//         tba.src = "img/icon-about/calendarBLACK.png"
+//     }
+// }
 // ==================================
-function changeAbt3() {
-    const bat = document.getElementById('zaap')
-    if (bat.src.match("img/icon-about/zapBLACK.png")) {
-        bat.src = "img/icon-about/zapWHITE.png"
-    } else {
-        bat.src = "img/icon-about/zapBLACK.png"
-    }
-}
+// function changeAbt3() {
+//     const bat = document.getElementById('zaap')
+//     if (bat.src.match("img/icon-about/zapBLACK.png")) {
+//         bat.src = "img/icon-about/zapWHITE.png"
+//     } else {
+//         bat.src = "img/icon-about/zapBLACK.png"
+//     }
+// }
 // ==================================
 function changeAbt4() {
     const tab = document.getElementById('location')
-    if (tab.src.match("img/icon-about/locationBLACK.png")) {
-        tab.src = "img/icon-about/locationWHITE.png"
-    } else {
+    if (tab.src.match("img/icon-about/locationWHITE.png")) {
         tab.src = "img/icon-about/locationBLACK.png"
+    } else {
+        tab.src = ""
     }
 }
 // ==================================
-function changeAbt5() {
-    const ttab = document.getElementById('education')
-    if (ttab.src.match("img/icon-about/mortarboardBLACK.png")) {
-        ttab.src = "img/icon-about/mortarboardWHITE.png"
-    } else {
-        ttab.src = "img/icon-about/mortarboardBLACK.png"
-    }
-}
+// function changeAbt5() {
+//     const ttab = document.getElementById('education')
+//     if (ttab.src.match("img/icon-about/mortarboardBLACK.png")) {
+//         ttab.src = "img/icon-about/mortarboardWHITE.png"
+//     } else {
+//         ttab.src = "img/icon-about/mortarboardBLACK.png"
+//     }
+// }
 
 // ============================ TOP BUTTON  ============================ //
 
@@ -277,171 +303,7 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-// ============================ CHANGE LANGUAGE ============================ //
-/*
 
-const langEl = document.querySelector('.langWrap');
-const link = document.querySelectorAll('a');
-const titleEl = document.querySelector('.im');
-const inicio = document.querySelector('#inicio');
-const sobre = document.querySelector('#sobre');
-const projetos = document.querySelector('#projetos');
-const contato = document.querySelector('#contato');
-//=====
-const aboutP = document.querySelector('.about_personal');
-//=====
-const desc = document.querySelector('#desc');
-const contactMe = document.querySelector('#contact_me');
-const send = document.querySelector('#send');
-const msg = document.querySelector('#msg');
-const tu = document.querySelector('.tu');
-const emaill = document.querySelector('#emaill'); 
-const comment = document.querySelector('#comment'); 
-//======================
-const welcome = document.querySelector('.welcome'); 
-const btnCV = document.querySelector('.btnCV');
-const age = document.querySelector('.age');
-const phone = document.querySelector('.phone');
-const email = document.querySelector('.email');
-const localizacao = document.querySelector('.localizacao');
-const educacao = document.querySelector('.educacao');
-const projectTT = document.querySelector('.project_tt');
-const projectDescription = document.querySelector('.project_description');
-const projectDescription2 = document.querySelector('.project_description2');
-const projectTitle2 = document.querySelector('.project_title2');
-const btn = document.querySelector('.btn');
-const descrEl = document.querySelector('.mim');
-
-link.forEach(el => {
-    el.addEventListener('click', () => {
-        langEl.querySelector('.active').classList.remove('active');
-        el.classList.add('active');
-
-        const attr = el.getAttribute('language');
-
-        titleEl.textContent = data[attr].im;
-        inicio.textContent = data[attr].inicio;
-        sobre.textContent = data[attr].sobre;
-        projetos.textContent = data[attr].projetos;
-        contato.textContent = data[attr].contato;
-        //=====
-        aboutP.textContent = data[attr].about_personal;
-        //=====
-        desc.textContent = data[attr].desc;
-        contactMe.textContent = data[attr].contact_me;
-        send.textContent = data[attr].send;
-        msg.textContent = data[attr].msg;
-        descrEl.textContent = data[attr].mim;
-        btnCV.textContent = data[attr].btnCV;
-        age.textContent = data[attr].age;
-        email.textContent = data[attr].email;
-        localizacao.textContent = data[attr].localizacao;
-        educacao.textContent = data[attr].educacao;
-        projectTT.textContent = data[attr].project_tt;
-        projectDescription.textContent = data[attr].project_description;
-        projectDescription2.textContent = data[attr].project_description2;
-        projectTitle2.textContent = data[attr].project_title2;
-        btn.textContent = data[attr].btn;
-        welcome.textContent = data[attr].welcome;
-        tu.textContent = data[attr].tu;
-        emaill.textContent = data[attr].emaill;
-        comment.textContent = data[attr].comment;
-    });
-});
-
-var data = {
-    "portuguese":
-    {
-        "tu": "Seu nome",
-        "emaill": "Seu e-mail",
-        "comment": "Digite sua mensagem",
-        "welcome": "Bem vind@",
-        "btnCV": "Baixar CV",
-        "email": "Email: arthursantosae@hotmail.com",
-        "age": "Idade: 23 anos - 09/05/1999",
-        "localizacao": "Localização: Vitória de Santo Antão, Pernambuco - Brasil",
-        "educacao": "Educação: Graduação - Análise e Desenvlvimentode Sistemas (andamento)",
-        "project_tt": "Aqui estão meus projetos",
-        "project_description": "Landing Page totalmente responsiva.",
-        "project_description2": "Projeto sendo produzido.",
-        "project_title2": "Em breve...",
-        "btn": "Enviar",
-        "sobre": "Sobre",
-        "projetos": "Projetos",
-        "contato": "Contato",
-        //=====
-        "about_personal": "Detalhes pessoais",
-        //=====
-        "desc": "&nbsp &nbsp Optei pelo mundo da tecnologia pelo fato de que eu sempre amei usar computadores, e quando descobri que poderia trabalhar usando-os, não pensei duas vezes.",
-        "contact_me": "Entre em contato!",
-        "send": "Mande-me um e-mail ou mande uma mensagem em uma de minhas redes:",
-        "msg": "Me mande uma mensagem!",
-        "inicio": "Início",
-        "im": "Sou um Desenvolvedor Web Front-end Junior, e estou a procura <br> do meu primeiro emprego no mundo da tecnologia.",
-        "descrEl": "Sobre mim",
-    },
-    "espanol":
-    {
-        "tu": "Tu nombre",
-        "emaill": "Tu e-mail",
-        "comment": "Escribe tu mensaje",
-        "welcome": "Bienvenido",
-        "btnCV": "Descargar CV",
-        "email": "Email: arthursantosae@hotmail.com",
-        "age": "Edad: 23 años - 09/05/1999",
-        "localizacao": "Ubicación: Vitória de Santo Antão, Pernambuco - Brasil",
-        "educacao": "Educación: Graduación - Análisis y Desarrollo de Sistemas (en curso)",
-        "project_tt": "Aquí están mis proyectos",
-        "project_description": "Landing Page totalmente receptiva.",
-        "project_description2": "Proyecto que se está produciendo.",
-        "project_title2": "Pronto...",
-        "btn": "Mandar",
-        "sobre": "Sobre",
-        "projetos": "Proyectos",
-        "contato": "Contacto",
-        //=====
-        "about_personal": "Detalles Personales",
-        //=====
-        "desc": "&nbsp &nbsp Me decanté por el mundo de la tecnología porque siempre me ha gustado usar computadoras, y cuando descubrí que podía trabajar con ellas, no lo pensé dos veces.",
-        "contact_me": "Entre e contacto!",
-        "send": "Envíame un correo electrónico o envíame un mensaje en una de mis redes:",
-        "msg": "Envíeme un mensaje!",
-        "inicio": "Comenzar",
-        "im": "Soy Junior Front-end Web Developer, y estoy buscando mi primer trabajo en el mundo de la tecnología.",
-        "descrEl": "Sobre mi.",
-    },
-    "english":
-    {
-        "tu": "Your name",
-        "emaill": "Your e-mail",
-        "comment": "Type your message",
-        "welcome": "Welcome",
-        "btnCV": "Download CV      ",
-        "email": "Email: arthursantosae@hotmail.com",
-        "age": "Age: 23 years old - 05/09/1999",
-        "localizacao": "Location: Vitória de Santo Antão, Pernambuco - Brasil",
-        "educacao": "Education: Degree - Analysis and Systems Development (in progress)",
-        "project_tt": "Here are my projects.",
-        "project_description": "Landing Page full responsive.",
-        "project_description2": "project being produced..",
-        "project_title2": "Soon...",
-        "btn": "Submit",
-        "sobre": "About",
-        "projetos": "Projects",
-        "contato": "Contact",
-        //=====
-        "about_personal": "Personal Details",
-        //=====
-        "desc": "&nbsp &nbsp I opted for the world of technology because I've always loved using computers, and when I found out that I could work using them, I didn't think twice.​",
-        "contact_me": "Contact me!",
-        "send": "Send me an email or message me on one of my networks:",
-        "msg": "Message me!",
-        "inicio": "Home",
-        "im": "I'm a Junior Front-end Web Developer, and I'm looking for my first job in the technology world.",
-        "descrEl": "About me",
-    }
-}
-*/
 
 
 
