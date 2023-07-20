@@ -40,7 +40,7 @@
         <!--===== THEME COLOR DIV's =====-->
         <div class="theme">
             <div id="dark"
-                onclick="themeToggle(); changeCall(); changeCall0(); changeRed(); changeRed2(); changeRed3(); changeRed4(); changeRed5(); changeGH(); changeGH2(); changeGH3(); changeGH4(); changeGH5(); changeWeather(); changeAbt(); changeAbt2(); changeAbt3(); changeAbt4(); changeAbt5(); changeTop(); changeTop2()">
+                onclick="themeToggle(); changeCall(); changeStt(); changeCall0(); changeRed(); changeRed2(); changeRed3(); changeRed4(); changeRed5(); changeGH(); changeGH2(); changeGH3(); changeGH4(); changeGH5(); changeWeather(); changeAbt(); changeAbt2(); changeAbt3(); changeAbt4(); changeAbt5(); changeTop(); changeTop2()">
                 <img src="img/Weather/sunny.png" id="moon">
             </div>
         </div>
@@ -53,35 +53,44 @@
             <!---->
             <div class="start">
                 <div class="start-cont">
-                    <div class="arthur">
-                        <h1 class="Unhover"><span class="hover">AR</span><span>THUR</span></h1>
+                    <div class="left-start" data-aos="zoom-out">
+                        <h2 class="oi">Oi, Sou</h2>
+                        <div class="arthur">
+                            <h1 class="Unhover"><span class="hover">AR</span><span>THUR</span></h1>
+                        </div>
+                        <!-- <p id="s" class="blue">Joaquim Santos do Nascimento</p> -->
+                        <h2 class="im">Desenvolvedor <span class="hover">Front-End</span>
+                        </h2>
+                        <h2 class="im2">Futuro <span class="hover">FullStack</span>
+                        </h2>
+                        <div class="icon-start">
+                            <div class="l-start">
+                                <a href="https://github.com/ArthurKhalifa" target="_blank" title="Github">
+                                    <img id="git" src="img/icon/git.png" class="icon-img">
+                                </a>
+                                <!---->
+                                <a href="https://wa.me/5581987344685" target="_blank" title="Whatsapp">
+                                    <img id="zapp" src="img/icon/call24.png" class="icon-img">
+                                </a>
+                                <!---->
+                                <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank" title="Linkedin">
+                                    <img id="lin" src="img/icon/in.png" class="icon-img">
+                                </a>
+                            </div>
+                            <div class="r-start">
+                                <!--===== BUTTON =====-->
+                                <a href="PtCV/CVpt.pdf" target="_blank">
+                                    <button class="btnCV">Currículo&nbsp&nbsp
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <p id="s" class="blue">Joaquim Santos do Nascimento</p>
-                    <div class="icon-start">
-                        <a href="https://github.com/ArthurKhalifa" target="_blank" title="Github">
-                            <img id="git" src="img/icon/git.png" class="icon-img">
-                        </a>
-                        <!---->
-                        <a href="https://wa.me/5581987344685" target="_blank" title="Whatsapp">
-                            <img id="zapp" src="img/icon/call24.png" class="icon-img">
-                        </a>
-                        <!---->
-                        <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank" title="Linkedin">
-                            <img id="lin" src="img/icon/in.png" class="icon-img">
-                        </a>
+                    <div class="right-start">
+                        <img src="img/imgCont/personP.svg" id="personStart" data-aos="fade-up-left">
                     </div>
-                    <p class="im">Sou um estudante de Desenvolvedor Web Front-end, e estou a procura <br> do meu
-                        primeiro
-                        emprego no
-                        mundo da
-                        tecnologia.
-                    </p>
-                    <!--===== BUTTON =====-->
-                    <a href="PtCV/CVpt.pdf" target="_blank">
-                        <button class="btnCV">Currículo&nbsp&nbsp
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                    </a>
+
                     <!--===== SCROLL =====-->
                     <div class="scroll-button">
                         <a href="#about">
@@ -277,7 +286,7 @@
                 <div class="left-cont" data-aos="zoom-in-right">
                     <h1 id="contact_me">Entre em <span class="blue">contato</span>!</h1>
                     <p id="send">Mande-me um e-mail ou mande uma mensagem em uma de minhas redes:</p>
-                        <p id="shine" class="blue">arthursantosae@hotmail.com</p>
+                    <p id="shine" class="blue">arthursantosae@hotmail.com</p>
                     <!--======= CONTACT ICONS ==========-->
                     <div class="icon-contact">
                         <a href="https://www.linkedin.com/in/arthursantos00/" target="_blank" class="a2">
@@ -300,33 +309,6 @@
                 <div class="right-cont" data-aos="zoom-in-left">
                     <img src="img/imgCont/callR.svg" id="img_right">
                 </div>
-            </div>
-            <!--======= MENSAGEM ==========-->
-            <div class="msg" data-aos="zoom-in-down">
-                <div class="login-title">
-                    <h1 id="msg">Me mande uma <span class="blue">mensagem!</span></h1>
-                </div>
-                <!---->
-                <form action="https://formsubmit.co/4dae74864486491960cefb0a72d46016" method="post" class="textfield">
-                    <div class="login-flex">
-                        <input id="text" type="text" name="name" placeholder="Seu nome" class="tu" autocomplete="off"
-                            required>
-                        <input id="emaill" type="email" placeholder="Seu e-mail" autocomplete="off" required>
-                    </div>
-                    <!---->
-                    <div class="login-comment">
-                        <textarea id="comment" type="comment" name="message" cols="70" rows="10"
-                            placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
-                        <input type="hidden" name="_captcha" value="false">
-                    </div>
-                    <!---->
-                    <div class="btn-div">
-                        <a href="#">
-                            <button type="submit" class="btn">Enviar</button>
-                        </a>
-                    </div>
-                    <input type="hidden" name="_next" value="https://arthurkhalifa.github.io/Portfolio/thanksPt.html">
-                </form>
             </div>
         </section>
     </div>

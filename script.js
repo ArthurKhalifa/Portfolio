@@ -44,6 +44,17 @@ function changeCall() {
         meImg.src = 'img/imgCont/meR.svg'
     }
 }
+
+//=========
+
+function changeStt() {
+    const meImg = document.getElementById('personStart')
+    if (meImg.src.match('img/imgCont/personP.svg')) {
+        meImg.src = 'img/imgCont/personO.svg'
+    } else {
+        meImg.src = 'img/imgCont/personP.svg'
+    }
+}
 // ============================ CHANGE GITHUB IMG ============================ //
 function changeGH() {
     const aboutImg = document.getElementById('reed2')
