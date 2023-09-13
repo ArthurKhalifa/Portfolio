@@ -56,110 +56,130 @@ function changeStt() {
     }
 }
 // ============================ CHANGE GITHUB IMG ============================ //
-function changeGH() {
-    const aboutImg = document.getElementById('reed2')
-    if (aboutImg.src.match('img/icon/gW.png')) {
-        aboutImg.src = 'img/icon/gB.png'
-    } else {
-        aboutImg.src = 'img/icon/gW.png'
-    }
-}
+// function changeGH() {
+//     const aboutImg = document.getElementById('reed2')
+//     if (aboutImg.src.match('img/icon/gW.png')) {
+//         aboutImg.src = 'img/icon/gB.png'
+//     } else {
+//         aboutImg.src = 'img/icon/gW.png'
+//     }
+// }
 
-//==================
-function changeGH2() {
-    const aboutImg = document.getElementById('reed4')
-    if (aboutImg.src.match('img/icon/gW.png')) {
-        aboutImg.src = 'img/icon/gB.png'
-    } else {
-        aboutImg.src = 'img/icon/gW.png'
-    }
-}
+// //==================
+// function changeGH2() {
+//     const aboutImg = document.getElementById('reed4')
+//     if (aboutImg.src.match('img/icon/gW.png')) {
+//         aboutImg.src = 'img/icon/gB.png'
+//     } else {
+//         aboutImg.src = 'img/icon/gW.png'
+//     }
+// }
 
-//==================
-function changeGH3() {
-    const aboutImg = document.getElementById('reed6')
-    if (aboutImg.src.match('img/icon/gW.png')) {
-        aboutImg.src = 'img/icon/gB.png'
-    } else {
-        aboutImg.src = 'img/icon/gW.png'
-    }
-}
+// //==================
+// function changeGH3() {
+//     const aboutImg = document.getElementById('reed6')
+//     if (aboutImg.src.match('img/icon/gW.png')) {
+//         aboutImg.src = 'img/icon/gB.png'
+//     } else {
+//         aboutImg.src = 'img/icon/gW.png'
+//     }
+// }
 
-//==================
-function changeGH4() {
-    const aboutImg = document.getElementById('reed8')
-    if (aboutImg.src.match('img/icon/gW.png')) {
-        aboutImg.src = 'img/icon/gB.png'
-    } else {
-        aboutImg.src = 'img/icon/gW.png'
-    }
-}
+// //==================
+// function changeGH4() {
+//     const aboutImg = document.getElementById('reed8')
+//     if (aboutImg.src.match('img/icon/gW.png')) {
+//         aboutImg.src = 'img/icon/gB.png'
+//     } else {
+//         aboutImg.src = 'img/icon/gW.png'
+//     }
+// }
 
-function changeGH5() {
-    const aboutImg = document.getElementById('reed10')
-    if (aboutImg.src.match('img/icon/gW.png')) {
-        aboutImg.src = 'img/icon/gB.png'
-    } else {
-        aboutImg.src = 'img/icon/gW.png'
-    }
-}
+// function changeGH5() {
+//     const aboutImg = document.getElementById('reed10')
+//     if (aboutImg.src.match('img/icon/gW.png')) {
+//         aboutImg.src = 'img/icon/gB.png'
+//     } else {
+//         aboutImg.src = 'img/icon/gW.png'
+//     }
+// }
+
 // ============================ CHANGE REDIRECT IMG ============================ //
-function changeRed() {
-    const callImg = document.getElementById('reed1')
-    if (callImg.src.match('img/icon/nxW.png')) {
-        callImg.src = 'img/icon/nxB.png'
-    } else {
-        callImg.src = 'img/icon/nxW.png'
-    }
-}
+// function changeRed() {
+//     const callImg = document.getElementById('reed1')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
 
-// =================
-function changeRed2() {
-    const callImg = document.getElementById('reed3')
-    if (callImg.src.match('img/icon/nxW.png')) {
-        callImg.src = 'img/icon/nxB.png'
-    } else {
-        callImg.src = 'img/icon/nxW.png'
-    }
-}
+// // =================
+// function changeRed2() {
+//     const callImg = document.getElementById('reed3')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
 
-// =================
-function changeRed3() {
-    const callImg = document.getElementById('reed5')
-    if (callImg.src.match('img/icon/nxW.png')) {
-        callImg.src = 'img/icon/nxB.png'
-    } else {
-        callImg.src = 'img/icon/nxW.png'
-    }
-}
+// // =================
+// function changeRed3() {
+//     const callImg = document.getElementById('reed5')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
 
-// =================
-function changeRed4() {
-    const callImg = document.getElementById('reed7')
-    if (callImg.src.match('img/icon/nxW.png')) {
-        callImg.src = 'img/icon/nxB.png'
-    } else {
-        callImg.src = 'img/icon/nxW.png'
-    }
-}
+// // =================
+// function changeRed4() {
+//     const callImg = document.getElementById('reed7')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
 
-// =================
-function changeRed5() {
-    const callImg = document.getElementById('reed9')
-    if (callImg.src.match('img/icon/nxW.png')) {
-        callImg.src = 'img/icon/nxB.png'
-    } else {
-        callImg.src = 'img/icon/nxW.png'
-    }
-}
+// // =================
+// function changeRed5() {
+//     const callImg = document.getElementById('reed9')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
 
+// // =================
+// function changeRed6() {
+//     const callImg = document.getElementById('fullL')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
+// // =================
+// function changeRed7() {
+//     const callImg = document.getElementById('newsL')
+//     if (callImg.src.match('img/icon/nxW.png')) {
+//         callImg.src = 'img/icon/nxB.png'
+//     } else {
+//         callImg.src = 'img/icon/nxW.png'
+//     }
+// }
 // ============================ PORT2 See More ============================ //
 // const seeMais = document.getElementsByClassName('seeMais')[0];
+// const portS = document.getElementsByClassName('portS')[0];
 
 // function more() {
-//     seeMais.classList.add('ativado')
+//     portS.classList.add('ativado')
 // }
-// ============================ CHANGE TOP ICON ============================ //
+//============================ CHANGE TOP ICON ============================ //
 function changeTop() {
     const weather = document.getElementsByClassName('top')
     if (weather.src.match('img/icon/tp.png')) {
@@ -207,14 +227,14 @@ function changeWeather() {
 //     }
 // }
 // ==================================
-function changeAbt4() {
-    const tab = document.getElementById('location')
-    if (tab.src.match("img/icon-about/locationWHITE.png")) {
-        tab.src = "img/icon-about/locationBLACK.png"
-    } else {
-        tab.src = ""
-    }
-}
+// function changeAbt4() {
+//     const tab = document.getElementById('location')
+//     if (tab.src.match("img/icon-about/locationWHITE.png")) {
+//         tab.src = "img/icon-about/locationBLACK.png"
+//     } else {
+//         tab.src = ""
+//     }
+// }
 // ==================================
 // function changeAbt5() {
 //     const ttab = document.getElementById('education')
@@ -227,14 +247,14 @@ function changeAbt4() {
 
 // ============================ TOP BUTTON  ============================ //
 
-const toTop = document.querySelector(".top")
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 1800) {
-        toTop.classList.add("active")
-    } else {
-        toTop.classList.remove("active")
-    }
-})
+// const toTop = document.querySelector(".top")
+// window.addEventListener("scroll", () => {
+//     if (window.pageYOffset > 1800) {
+//         toTop.classList.add("active")
+//     } else {
+//         toTop.classList.remove("active")
+//     }
+// })
 
 // ============================ ACTIVE HEADER BY SCROLL ============================ //
 const actInicio = document.querySelector("#inicio")

@@ -23,6 +23,7 @@ body {
     --color-w: #000000;
     --into: #505050;
     --red: #C56C07;
+    --cir: #ce9e68;
     --redR: #07c5a5;
     --bg-dark: #fff;
     --color-input: #fff;
@@ -35,6 +36,8 @@ body {
     --pj-bg: #F0F0F0;
     --gray: rgb(87, 87, 87);
     --bg-radiant: linear-gradient(180deg, transparent, #C56C07);
+    --bg-art: linear-gradient(to right, #f0f0f0, #e7d5ea, #eeb6d3, #f596a9, #ef7b6f, #e67352, #d76e33, #c56c07, #c56c07, #c56c07, #c56c07, #c56c07);
+    ;
 }
 
 /*=====LIGHT THEME=====*/
@@ -44,6 +47,7 @@ body {
     --color-w: #fff;
     --into: #a5a5a5;
     --red: #c50756;
+    --cir: #501b31;
     --res: #000000;
     --res2: rgb(12, 12, 12);
     --color-input: #0C0C0C;
@@ -54,6 +58,7 @@ body {
     --pj-bg: #121518;
     --bg-radiant: linear-gradient(180deg, transparent, #c50756);
     --gray: rgb(179, 179, 179);
+    --bg-art: linear-gradient(to right, #000000, #271017, #481626, #6c1835, #911644, #a2134a, #b30f50, #c50756, #c50756, #c50756, #c50756, #c50756);
 }
 
 /*==========*/
@@ -240,6 +245,25 @@ li a.active {
     position: relative;
 }
 
+.circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: var(--cir);
+    right: -100px;
+    top: -200px;
+}
+
+.circle2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: var(--cir);
+    right: -300px;
+    top: 0px;
+}
 
 /*=========== THEME ===========*/
 
@@ -344,7 +368,6 @@ li a.active {
     position: relative;
     color: var(--bg-border);
     overflow: hidden;
- 
 }
 
 
@@ -361,7 +384,7 @@ li a.active {
     height: 70%;
     background-image: var(--lines);
     animation: animate 5s linear infinite;
-    
+
 }
 
 .arthur::after {
@@ -369,6 +392,7 @@ li a.active {
     position: absolute;
     inset: 5px;
     background-color: var(--res);
+
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -748,94 +772,28 @@ li a.active {
     background-color: #cf2828;
 }
 
-#reed1 {
-    width: 32px;
+#ig {
+    width: 40px;
+    border-bottom: 5px solid var(--red);
 }
 
-#reed1:hover {
+#ig:hover {
     transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    border-bottom: 5px solid var(--red);
+    border-radius: 15%;
 }
 
-#reed2 {
-    width: 32px;
+#il {
+    width: 40px;
+    border-bottom: 5px solid var(--red);
 }
 
-#reed2:hover {
+#il:hover {
     transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed3 {
-    width: 32px;
-}
-
-#reed3:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed4 {
-    width: 32px;
-}
-
-#reed4:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed5 {
-    width: 32px;
-}
-
-#reed5:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed6 {
-    width: 32px;
-}
-
-#reed6:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed7 {
-    width: 32px;
-}
-
-#reed7:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed8 {
-    width: 32px;
-}
-
-#reed8:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed9 {
-    width: 32px;
-}
-
-#reed9:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
-#reed10 {
-    width: 32px;
-}
-
-#reed10:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    border-bottom: 5px solid var(--red);
+    border-radius: 15%;
 }
 
 /*=========*/
@@ -856,6 +814,18 @@ li a.active {
 }
 
 /*==================================*/
+.portS {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transform: 0.5s;
+}
+
+.portS.ativado {
+    display: flex;
+    transform: 0.5s;
+}
+
 .port {
     width: 100%;
     display: flex;
@@ -878,7 +848,10 @@ li a.active {
 
 .pageImg {
     width: 100%;
+    height: 230px;
 }
+
+/*  */
 
 
 .base {
@@ -888,7 +861,7 @@ li a.active {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    border: 5px solid rgb(37, 38, 54);
+    border: 5px solid #252636;
     border-radius: 3px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -900,12 +873,24 @@ li a.active {
     }
 }
 
+.base:hover {
+    .titleBase h1 {
+        color: var(--red);
+    }
+}
+
 .base p {
     color: rgb(128, 128, 128);
 }
 
 .basex {
     margin-top: 80px;
+}
+
+.noM {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .pageImg {
@@ -1015,6 +1000,9 @@ li a.active {
     color: var(--red);
     transition: 0.2s;
 }
+
+/*=== BASEOFF ===*/
+
 
 /*===================== CONTACT =====================*/
 .contact {
@@ -1301,6 +1289,20 @@ li a.active {
 
 /*==================== MIDEA QUERY =====================*/
 @media screen and (min-width: 1900px) {
+
+    /*=== CIRCLE ===*/
+    .circle {
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .circle2 {
+        width: 1000px;
+        height: 1000px;
+    }
+
+    /**/
+
     .arthur h1 {
         width: 100%;
         font-size: 200px;
@@ -1325,11 +1327,16 @@ li a.active {
 }
 
 @media screen and (max-width: 1090px) {
+    .base {
+        width: 45%;
+    }
+
     .basex {
         margin-top: 0;
         margin: 10px;
     }
 }
+
 
 @media screen and (max-width: 770px) {
 
@@ -1381,7 +1388,7 @@ li a.active {
         background-color: var(--res);
         transition: 0.5s;
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-        z-index: 9999999;
+
     }
 
     .welcome {
@@ -1547,11 +1554,23 @@ li a.active {
 }
 
 @media screen and (max-width: 683px) {
+    .circle {
+        width: 400px;
+        height: 400px;
+        top: -100px;
+    }
+
+    .circle2 {
+        width: 400px;
+        height: 400px;
+        top: 10px;
+        right: -200px;
+    }
+
     .arthur {
         padding: 0;
         width: 400px;
     }
-
 
     .arthur h1 {
         font-size: 90px;
@@ -1655,6 +1674,10 @@ li a.active {
 }
 
 @media screen and (max-width: 950px) {
+    .fff {
+        color: var(--bg-input);
+    }
+
     .scroll-down {
         left: 48, 5%;
     }
