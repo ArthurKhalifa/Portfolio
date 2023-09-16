@@ -334,8 +334,23 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+// ========== BG Header By Scroll ========== // 
+const bgBlack = document.getElementsByClassName('header')[0];
 
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 56) {
+        bgBlack.style.backgroundColor = "var(--res2)"
+    } else {
+        bgBlack.style.backgroundColor = "transparent"
+    }
+});
+//========
+// const wel = document.getElementsByClassName('welcome')[0];
 
-
-
-
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY >= 56) {
+//         wel.style.color = "var(--gb-input)"
+//     } else {
+//         wel.style.color = "var(--color-w)"
+//     }
+// });
